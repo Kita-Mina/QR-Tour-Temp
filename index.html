@@ -3,83 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokyo Arrival Tour Itinerary</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tokyo Arrival Tour - May 9, 2026</title>
+    <style>
+        :root {
+            --primary-blue: #1a3a5f;
+            --accent-blue: #3498db;
+            --bg-gray: #f4f7f6;
+            --text-dark: #2c3e50;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .itinerary-card {
+            background: white;
+            max-width: 800px;
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid #e1e4e8;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        .meta-info {
+            display: flex;
+            justify-content: space-around;
+            background: #f8f9fa;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+            font-size: 0.9rem;
+        }
+
+        .meta-item b {
+            color: var(--primary-blue);
+            display: block;
+            text-transform: uppercase;
+            font-size: 0.7rem;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            border-left: 4px solid var(--accent-blue);
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 15px;
+        }
+
+        .time {
+            min-width: 120px;
+            font-weight: bold;
+            color: var(--accent-blue);
+        }
+
+        .activity b {
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .activity p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #5d6d7e;
+        }
+
+        .notes {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        .notes h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            color: var(--primary-blue);
+        }
+
+        .notes ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .timeline-item {
+                flex-direction: column;
+            }
+            .time {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
 
+<div class="itinerary-card">
     <header>
-        <h1>Tokyo Arrival Tour Itinerary</h1>
-        <p>Date: May 9, 2026 · Transportation: Private Bus (Driver: Chou)</p>
-        <p>Route: Narita → Tokyo → Hotel</p>
+        <h1>Tokyo Arrival Tour [cite: 1]</h1>
+        <p>Saturday, May 9, 2026 [cite: 2, 10]</p>
     </header>
 
-    <section class="table-section">
-        <table>
-            <thead>
-                <tr>
-                    <th>TIME</th>
-                    <th>ACTIVITY</th>
-                    <th>DETAILS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>08:00 - 08:30</td>
-                    <td>Pick Up at Narita Airport</td>
-                    <td>Meet & greet at the arrival area<br>Group assembly and boarding the bus<br>Depart to breakfast venue</td>
-                </tr>
-                <tr>
-                    <td>08:30 - 09:30</td>
-                    <td>Breakfast at Hotel Nikko Narita</td>
-                    <td>Buffet breakfast<br>Preparation for Tokyo city tour</td>
-                </tr>
-                <tr>
-                    <td>09:30 - 10:30 / 11:00</td>
-                    <td>Transfer to Tokyo City Area</td>
-                    <td>Travel by private tour bus</td>
-                </tr>
-                <tr>
-                    <td>10:45 / 11:00 - 11:30 / 11:45</td>
-                    <td>Asakusa & Nakamise Shopping Street</td>
-                    <td>Visit Senso-ji Temple<br>Walk around Nakamise Shopping Street<br>Free time for photos and souvenir shopping</td>
-                </tr>
-                <tr>
-                    <td>11:30 / 11:45 - 12:15</td>
-                    <td>Tokyo Skytree Photo Stop</td>
-                    <td>Short stop around Tokyo Skytree<br>Opportunity to take photos and enjoy the view<br>Gather again by 12:15</td>
-                </tr>
-                <tr>
-                    <td>12:15 - 12:50</td>
-                    <td>Transfer to The Ocean Buffet</td>
-                    <td>Depart from Tokyo Skytree area<br>Transfer to lunch restaurant</td>
-                </tr>
-                <tr>
-                    <td>12:50 - 14:15</td>
-                    <td>Lunch at The Ocean Buffet</td>
-                    <td>Reservation at 13:00<br>Enjoy buffet lunch and rest time</td>
-                </tr>
-                <tr>
-                    <td>14:15 - 15:30</td>
-                    <td>Transfer to Hotel</td>
-                    <td>Estimated hotel arrival around 15:30</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+    <div class="meta-info">
+        <div class="meta-item"><b>Transport</b> Private Bus [cite: 3]</div>
+        <div class="meta-item"><b>Driver</b> Chou [cite: 3]</div>
+        <div class="meta-item"><b>Route</b> Narita → Tokyo → Hotel [cite: 4]</div>
+    </div>
 
-    <section class="notes">
-        <h2>Tour Notes</h2>
-        <ul>
-            <li>Schedule may change depending on traffic conditions.</li>
-            <li>Please return to the bus on time during photo stops and free time.</li>
-            <li>Main highlights include Asakusa, Nakamise Street, Senso-ji Temple, and Tokyo Skytree.</li>
-        </ul>
-    </section>
+    <div class="content">
+        <h2>Morning Schedule</h2>
+        
+        <div class="timeline-item">
+            <div class="time">08:00 – 08:30</div>
+            <div class="activity">
+                <b>Pick Up at Narita Airport [cite: 5]</b>
+                <p>Meet and greet at the arrival area. Group assembly and boarding the bus. [cite: 5]</p>
+            </div>
+        </div>
 
-    <footer>
-        <p>Tokyo Arrival Tour · May 9, 2026</p>
-    </footer>
+        <div class="timeline-item">
+            <div class="time">08:30 – 09:30</div>
+            <div class="activity">
+                <b>Breakfast at Hotel Nikko Narita [cite: 5]</b>
+                <p>Buffet breakfast and preparation for the Tokyo city tour. [cite: 5]</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="time">11:00 – 12:15</div>
+            <div class="activity">
+                <b>Asakusa & Tokyo Skytree [cite: 5]</b>
+                <p>Visit Senso-ji Temple and Nakamise Shopping Street. Short stop for photos at Tokyo Skytree. [cite: 5, 9]</p>
+                <p><i>*Gather back at the bus by 12:15. [cite: 5]</i></p>
+            </div>
+        </div>
+
+        <h2>Afternoon Schedule</h2>
+
+        <div class="timeline-item">
+            <div class="time">12:50</div>
+            <div class="activity">
+                <b>Lunch at The Ocean Buffet [cite: 5]</b>
+                <p>Reservation at 13:00. Enjoy a buffet lunch and rest time. [cite: 5]</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="time">15:30 Arrival</div>
+            <div class="activity">
+                <b>Hotel Check-In [cite: 5]</b>
+                <p>Final transfer to the hotel via private bus. [cite: 5]</p>
+            </div>
+        </div>
+
+        <div class="notes">
+            <h3>Tour Reminders [cite: 6]</h3>
+            <ul>
+                <li>Schedule may change depending on traffic conditions. [cite: 7]</li>
+                <li>Please return to the bus on time during photo stops. [cite: 8]</li>
+                <li>Main highlights: Asakusa, Nakamise Street, Senso-ji Temple, and Tokyo Skytree. [cite: 9]</li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
